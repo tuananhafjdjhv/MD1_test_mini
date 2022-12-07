@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+   <h4> Nhập Năm sinh : <input id="namsinh" type="number"></h4>
+   <button onclick="kiemtra()"> Kiem tra</button>
+    <h1 id="tuoi"></h1>
+  <script>
+      function kiemtra() {
+          let namsinh = document.getElementById('namsinh').value;
+          // let namsinh = 2001;
+          let can;
+          let chi;
+
+          // if (namsinh % 10 == 0) {
+          //     can = 'canh';
+          // } else if ( namsinh % 10 == 1) {
+          //     can = 'than';
+          // } else if ( namsinh % 10 == 2) {
+          //     can = 'Nham';
+          // }else if ( namsinh % 10 == 3) {
+          //     can = 'quy';
+          // }else if ( namsinh % 10 == 4) {
+          //     can ='giap';
+          // }else if ( namsinh % 10 == 5) {
+          //     can = 'at';
+          // }else if ( namsinh % 10 == 6) {
+          //     can = 'binh';
+          // }else if ( namsinh % 10 == 7) {
+          //     can = 'dinh';
+          // }else if ( namsinh % 10 == 8) {
+          //     can ='mau';
+          // }else if ( namsinh % 10 == 9) {
+          //     can = 'ky'
+          // }
+        switch (namsinh % 10) {
+            case 0:
+                can = 'Canh';
+                break;
+            case 1:
+                can = 'Thân';
+                break;
+            case 2:
+                can = 'Nhâm';
+                break;
+            case 3:
+                can = 'Quý'
+                break;
+            case 4:
+                can ='Giáp';
+                break;
+            case 5:
+                can ='Ất';
+                break;
+            case 6:
+                can = 'Bính';
+                break;
+            case 7:
+                can = 'Đinh';
+                break;
+            case 8:
+                can = 'Mậu';
+                break;
+            case 9:
+                can = 'Kỷ';
+                break;
+        }
+        switch (namsinh % 10) {
+            case 0:
+                chi = 'Thân';
+                break;
+            case 1:
+                chi = 'Dậu';
+                break;
+            case 2:
+                chi = 'Tuất';
+                break;
+            case 3:
+                chi = 'Hợi'
+                break;
+            case 4:
+                chi ='Tý';
+                break;
+            case 5:
+                chi ='Sửu';
+                break;
+            case 6:
+                chi = 'Dần';
+                break;
+            case 7:
+                chi = 'Mão';
+                break;
+            case 8:
+                chi = 'Thìn';
+                break;
+            case 9:
+                chi = "Tỵ";
+                break;
+        }
+        // switch (namsinh % 12) {
+        //     case 0:
+        //         chi = 'than';
+        //         break;
+        //     case 1:
+        //         chi = 'dau';
+        //         break;
+        //     case 2:
+        //         chi = 'tuat';
+        //         break;
+        //     case 3:
+        //         chi = 'hoi'
+        // }
+
+    document.getElementById('tuoi').innerText = can + " " + chi;
+      }
+
+  </script>
+</body>
+</html>

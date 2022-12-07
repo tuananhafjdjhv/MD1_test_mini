@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h3>Tuoi em : <input id="tuoiem" type="text"></h3>
+  <h3> tuoi bo la: <input id="tuoibo" type="text"></h3>
+  <h3>tuoi anh la: <input id="tuoianh" type="text"></h3>
+  <button onclick="OK()"> OK</button>
+  <script>
+    function OK() {
+      let tuoiem = + document.getElementById('tuoiem').value;
+      let tuoianh = tuoiem + 3;
+      let tuoibo = tuoianh * 6;
+      document.getElementById("tuoianh").value =tuoianh;
+      document.getElementById('tuoibo').value =tuoibo;
+    }
+
+  </script>
+</body>
+</html>

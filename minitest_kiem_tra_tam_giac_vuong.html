@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p>Nhap 3 canh tam giac:
+          <input id="a">
+          <input id="b">
+          <input id="c"></p>
+  <button onclick="kiemTra()"> KIEM TRA</button>
+    <script>
+        function kiemTra() {
+          let a = + document.getElementById('a').value;
+          let b = + document.getElementById('b').value;
+          let c = + document.getElementById('c').value;
+          if (a+b>c && a+c>b && b+c>a) {
+            if (a*a == b*b+c*c || a*a+b*b == c*c || b*b== c*c + a*a) {
+              alert('day la tam giac vuong')}
+              else { alert('day khong phai tam giac vuong')}
+            }
+
+            else {alert('day ko phai tam giac') }
+        }
+
+    </script>
+</body>
+</html>
